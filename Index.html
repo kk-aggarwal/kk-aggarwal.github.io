@@ -1,1 +1,104 @@
+To include icons for different sections using Bootstrap 4 and Font Awesome icons, you can update the code as follows:
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>[Your Name] - Resume</title>
+</head>
+<body>
+    <div class="container">
+        <header class="mt-4">
+            <h1 class="text-center">[Your Name]</h1>
+            <p class="text-center">[Your Contact Information]</p>
+        </header>
+
+        <div id="carouselResume" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselResume" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselResume" data-slide-to="1"></li>
+                <li data-target="#carouselResume" data-slide-to="2"></li>
+                <li data-target="#carouselResume" data-slide-to="3"></li>
+                <li data-target="#carouselResume" data-slide-to="4"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="about-me">
+                    <h2 class="mt-5"><i class="fas fa-user"></i> About Me</h2>
+                    <!-- Add your photo here -->
+                    <img src="your-photo.jpg" alt="Your Name" class="img-fluid rounded-circle mt-3">
+                    <p class="mt-3">I am an accomplished Full Stack Developer with expertise in Python, Django, and Vue.js, combined with extensive experience as an IT Manager...</p>
+                </div>
+
+                <div class="carousel-item" id="experience">
+                    <h2 class="mt-5"><i class="fas fa-briefcase"></i> Experience</h2>
+                    <h3>Deputy General Manager (IT) - HMT Machine Tools - India</h3>
+                    <p>Apr 2000 - Jun 2023 (23 years, 3 months)</p>
+                    <ul>
+                        <li>Designed, developed, and deployed custom ERP software as a Full Stack Developer.</li>
+                        <li>Managed IT services and served as the Systems Administrator.</li>
+                    </ul>
+                    
+                    <h3>Production Manager - HMT Machine Tools Limited</h3>
+                    <p>Sep 1987 - Mar 2000 (12 years, 7 months)</p>
+                    <ul>
+                        <li>Managed production, production planning, and materials planning in various capacities and roles.</li>
+                    </ul>
+                </div>
+
+                <div class="carousel-item" id="education">
+                    <h2 class="mt-5"><i class="fas fa-graduation-cap"></i> Education</h2>
+                    <h3>Bachelor of Engineering (BE) - PEC University of Technology, PEC Chandigarh</h3>
+                    <p>1983-1987</p>
+                    <p>Graduated with First Grade</p>
+                    
+                    <h3>Master of Science (MS) - Punjab Technical University</h3>
+                    <p>Graduated with First Grade</p>
+
+                    <h3>Postgraduate Diploma (PGDCA) - Panjab University, Chandigarh</h3>
+                    <p>Graduated with First Grade</p>
+                </div>
+
+                <div class="carousel-item" id="skills">
+                    <h2 class="mt-5"><i class="fas fa-code"></i> Skills</h2>
+                    <ul>
+                        <li>Programming Languages: Python (LinkedIn Skill Assessment)</li>
+                        <li>Web Framework: Django (LinkedIn Skill Assessment)</li>
+                        <li>Frontend Development: Vue.js</li>
+                        <!-- Add more skills as needed -->
+                    </ul>
+                </div>
+
+                <div class="carousel-item" id="age">
+                    <h2 class="mt-5"><i class="fas fa-birthday-cake"></i> Age</h2>
+                    <p class="mt-3">56 years</p>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselResume" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselResume" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <footer class="text-center mt-4">
+        <p>&copy; 2023 [Your Name]</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+```
+
+In this code, I've added Font Awesome icons to the section headings for each slide. You can see icons like `<i class="fas fa-user"></
